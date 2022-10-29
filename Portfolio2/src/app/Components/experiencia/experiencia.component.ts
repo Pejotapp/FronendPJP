@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Experiencia } from 'src/app/model/experiencia';
-import { SExperienciaService } from 'src/app/service/s-experiencia.service';
-import { TokenService } from 'src/app/service/token.service';
+import { Experiencia } from 'src/app/Models/experiencia';
+
+import { SExperienciaService } from 'src/app/Service/sexperiencia.service';
+
+import { STokenService } from 'src/app/Service/stoken.service';
 
 @Component({
   selector: 'app-experiencia',
@@ -14,7 +16,7 @@ export class ExperienciaComponent implements OnInit {
 
   constructor(
     private sExperiencia: SExperienciaService,
-    private tokenService: TokenService,
+    private tokenService: STokenService,
     private router: Router
   ) {}
 

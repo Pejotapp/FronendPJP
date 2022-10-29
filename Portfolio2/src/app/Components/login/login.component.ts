@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { LoginUsuario } from 'src/app/model/login-usuario';
-import { AuthService } from 'src/app/service/auth.service';
-import { TokenService } from 'src/app/service/token.service';
+import { LoginUsuario } from 'src/app/Models/login-usuario';
+
+import { SAuthService } from 'src/app/Service/sauth.service';
+import { STokenService } from 'src/app/Service/stoken.service';
 
 @Component({
   selector: 'app-login',
@@ -19,8 +20,8 @@ export class LoginComponent implements OnInit {
   errMsj: string;
 
   constructor(
-    private tokenService: TokenService,
-    private authService: AuthService,
+    private tokenService: STokenService,
+    private authService: SAuthService,
     private router: Router
   ) {}
 

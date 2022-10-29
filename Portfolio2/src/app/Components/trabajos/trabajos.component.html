@@ -13,13 +13,13 @@
             Agregar
           </button>
         </div>
-        <div class="row" *ngIf="trabajo?.length == 0">
+        <div class="row" *ngIf="trabajos?.length == 0">
           <p style="color: rgb(196, 162, 162)">No hay trabajos para mostrar</p>
         </div>
   
         <div class="card w-3">
           <ul>
-            <li class="list-group-item" *ngFor="let Trabajos of trabajos">
+            <li class="list-group-item" *ngFor="let Trabajo of trabajos">
               <img
                 class="card-img-top img-responsive img-thumbnail"
                 src="{{ Trabajo.imgtrabajo }}"
@@ -43,7 +43,7 @@
                   <button
                     *ngIf="isLogged"
                     class="bi bi-pencil btn btn-sm btn-outline-dark"
-                    routerLink="/edittrabajo/{{ trabajo.id }}"
+                    routerLink="/edittrabajo/{{ Trabajo.id }}"
                   >
                     Editar
                   </button>

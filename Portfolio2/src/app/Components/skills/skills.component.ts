@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { SkillsService } from 'src/app/service/skills.service';
-import { Skills } from 'src/app/model/skills';
-import { TokenService } from 'src/app/service/token.service';
+
+
 import { Router } from '@angular/router';
+import { Skills } from 'src/app/Models/skills';
+import { SSkillService } from 'src/app/Service/sskill.service';
+import { STokenService } from 'src/app/Service/stoken.service';
 
 @Component({
   selector: 'app-skills',
@@ -13,8 +15,8 @@ export class SkillsComponent implements OnInit {
   skills: Skills[];
 
   constructor(
-    private skillsService: SkillsService,
-    private tokenService: TokenService,
+    private skillsService: SSkillService,
+    private tokenService: STokenService,
     private router: Router
   ) { }
 

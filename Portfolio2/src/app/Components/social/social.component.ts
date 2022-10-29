@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { STokenService } from 'src/app/Service/stoken.service';
 import { TokenService } from 'src/app/service/token.service';
 
 @Component({
@@ -10,7 +11,7 @@ import { TokenService } from 'src/app/service/token.service';
 export class SocialComponent implements OnInit {
   isLogged = false;
 
-  constructor(private router: Router, private tokenService: TokenService) { }
+  constructor(private router: Router, private tokenService: STokenService) { }
 
   ngOnInit(): void {
     if(this.tokenService.getToken()){

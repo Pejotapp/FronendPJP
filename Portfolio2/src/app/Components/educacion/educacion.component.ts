@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { EducacionService } from 'src/app/service/educacion.service';
-import { TokenService } from 'src/app/service/token.service';
-import { Educacion } from 'src/app/model/educacion';
+import { Educacion } from 'src/app/Models/educacion';
+import { SEducacionService } from 'src/app/Service/seducacion.service';
+import { STokenService } from 'src/app/Service/stoken.service';
 
 @Component({
   selector: 'app-educacion',
@@ -12,8 +12,8 @@ export class EducacionComponent implements OnInit {
   educacion: Educacion[];
 
   constructor(
-    private sEducacion: EducacionService,
-    private tokenService: TokenService
+    private sEducacion: SEducacionService,
+    private tokenService: STokenService
   ) {}
 
   isLogged = false;

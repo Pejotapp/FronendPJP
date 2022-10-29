@@ -1,0 +1,29 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: unset;
+	display: flex;
+	background-color: rgb(104, 132, 156);
+	
+}
+html, body{
+	margin: 0;
+	padding: 0;
+	background-color: rgb(104, 132, 156);
+}
+
+body {
+	font-family: "Futura", "Helvetica", "Arial", sans-serif;
+	min-height: 100vh;
+	min-width: 100vw;
+	display: block;
+	height: 100%;
+}
+
+html {
+	height: 100%;
+}

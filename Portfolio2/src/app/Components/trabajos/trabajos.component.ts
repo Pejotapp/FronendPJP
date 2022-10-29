@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Trabajo } from 'src/app/model/Trabajo';
-import { TrabajoService } from 'src/app/service/trabajo.service';
-import { TokenService } from 'src/app/service/token.service';
+import { STrabajoService } from 'src/app/Service/strabajo.service';
+import { STokenService } from 'src/app/Service/stoken.service';
+import { Trabajo } from 'src/app/Models/trabajo';
 
 @Component({
   selector: 'app-trabajos',
@@ -13,8 +13,8 @@ export class TrabajosComponent implements OnInit {
   trabajos: Trabajo[];
 
   constructor(
-    private traService: TrabajoService,
-    private tokenService: TokenService,
+    private traService: STrabajoService,
+    private tokenService: STokenService,
     private router: Router
   ) {}
   isLogged = false;
