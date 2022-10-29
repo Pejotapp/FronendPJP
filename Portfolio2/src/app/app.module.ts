@@ -14,6 +14,18 @@ import { ExperienciaComponent } from './Components/experiencia/experiencia.compo
 import { LoginComponent } from './Components/login/login.component';
 import { SkillsComponent } from './Components/skills/skills.component';
 import { TrabajosComponent } from './Components/trabajos/trabajos.component';
+import { interceptorProvider } from './Service/sinterceptor.service';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { EditAcercaDeComponent } from './Components/acerca-de/edit-acerca-de.component';
+import { EditTrabajosComponent } from './Components/Trabajos/edit-trabajos.component';
+import { NewTrabajosComponent } from './Components/Trabajos/new-trabajos.component';
+import { EditSkillComponent } from './Components/Skill/edit-skill.component';
+import { NewSkillComponent } from './Components/Skill/new-skill.component';
+import { EditExperienciaComponent } from './Components/Experiencia/edit-experiencia.component';
+import { NewExperienciaComponent } from './Components/Experiencia/new-experiencia.component';
+import { NewEducacionComponent } from './Components/Educacion/new-educacion.component';
+import { EditEducacionComponent } from './Components/Educacion/edit-educacion.component';
 
 @NgModule({
   declarations: [
@@ -28,13 +40,27 @@ import { TrabajosComponent } from './Components/trabajos/trabajos.component';
     ExperienciaComponent,
     LoginComponent,
     SkillsComponent,
-    TrabajosComponent
+    TrabajosComponent,
+    EditAcercaDeComponent,
+    EditTrabajosComponent,
+    NewTrabajosComponent,
+    EditSkillComponent,
+    NewSkillComponent,
+    EditExperienciaComponent,
+    NewExperienciaComponent,
+    NewEducacionComponent,
+    EditEducacionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+
+   
+    HttpClientModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [interceptorProvider],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { STokenService } from 'src/app/Service/stoken.service';
-import { TokenService } from 'src/app/service/token.service';
+
 
 @Component({
   selector: 'app-social',

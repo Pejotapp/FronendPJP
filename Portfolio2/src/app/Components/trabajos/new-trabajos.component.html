@@ -1,0 +1,85 @@
+<div class="container-fluid mt-3">
+    <form #f="ngForm" class="needs-validation" novalidate>
+      <div class="row">
+        <div class="col-12 col-md-4 text-start">
+          <label for="nombreTrabajo" class="form-label">Nombre trabajo:</label>
+        </div>
+        <div class="col-12 col-md">
+          <input
+            type="text"
+            id="nombreTrabajo"
+            name="nombreTrabajo"
+            [(ngModel)]="nombreTrabajo"
+            required
+            class="form-control"
+          />
+          <div class="invalid-feedback">Campo obligatorio.</div>
+          <div class="valid-feedback">Campo completo.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <label for="imgtrabajo" class="form-label">Imagen (link):</label>
+        </div>
+        <div class="col-12 col-md">
+          <input
+            type="text"
+            required
+            class="form-control"
+            id="imgtrabajo"
+            name="imgtrabajo"
+            [(ngModel)]="imgtrabajo"
+          />
+          <div class="invalid-feedback">Campo obligatorio.</div>
+          <div class="valid-feedback">Campo completo.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <label for="descripcionTrabajo" class="form-label"
+            >Descripción del trabajo:</label
+          >
+        </div>
+        <div class="col-12 col-md">
+          <textarea
+            type="text"
+            required
+            class="form-control"
+            name="descripcionTrabajo"
+            id="descripcionTrabajo"
+            [(ngModel)]="descripcionTrabajo"
+          ></textarea>
+  
+          <div class="invalid-feedback">Campo obligatorio.</div>
+          <div class="valid-feedback">Campo completo.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <label for="linkTrabajo" class="form-label"
+            >Link hacia el Trabajo:</label
+          >
+        </div>
+        <div class="col-12 col-md">
+          <input
+            type="text"
+            class="form-control"
+            name="linkTrabajo"
+            id="linkTrabajo"
+            [(ngModel)]="linkTrabajo"
+          />
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col">
+          <button type="submit" class="btn btn-success" (click)="onCreate()">
+            Enviar
+          </button>
+        </div>
+        <div class="col">
+          <button class="btn btn-primary" [routerLink]="'/'">Volver</button>
+        </div>
+      </div>
+    </form>
+  </div>

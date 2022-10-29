@@ -1,0 +1,84 @@
+<div class="container-fluid mt-3">
+    <form #f="ngForm" class="needs-validation" novalidate text-center>
+      <div class="row">
+        <div class="col-12 col-md-4 text-start">
+          <label for="nombreTrabajo" class="form-label">Nombre del Trabajo:</label>
+        </div>
+        <div class="col-12 col-md">
+          <input
+            type="text"
+            id="nombreTrabajo"
+            name="nombreTrabajo"
+            [(ngModel)]="trabajo.nombreTrabajo"
+            required
+            class="form-control"
+          />
+          <div class="invalid-feedback">Campo obligatorio.</div>
+          <div class="valid-feedback">Campo completo.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <label for="imgtrabajo" class="form-label">Imagen (link):</label>
+        </div>
+        <div class="col-12 col-md">
+          <input
+            type="text"
+            required
+            class="form-control"
+            id="imgtrabajo"
+            name="imgtrabajo"
+            [(ngModel)]="trabajo.imgtrabajo"
+          />
+          <div class="invalid-feedback">Campo obligatorio.</div>
+          <div class="valid-feedback">Campo completo.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <label for="descripciontrabajo" class="form-label"
+            >Descripción del trabajo:</label
+          >
+        </div>
+        <div class="col-12 col-md">
+          <textarea
+            type="text"
+            required
+            class="form-control"
+            name="descripciontrabajo"
+            id="descripciontrabajo"
+            [(ngModel)]="trabajo.descripciontrabajo"
+          ></textarea>
+          <div class="invalid-feedback">Campo obligatorio.</div>
+          <div class="valid-feedback">Campo completo.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <label for="linktrabajo" class="form-label"
+            >Link hacia el trabajo:</label
+          >
+        </div>
+        <div class="col-12 col-md">
+          <input
+            type="text"
+            class="form-control"
+            name="linktrabajo"
+            id="linktrabajo"
+            [(ngModel)]="trabajo.linktrabajo"
+          />
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col">
+          <button type="submit" class="btn btn-success" (click)="onUpdate()">
+            Enviar
+          </button>
+        </div>
+        <div class="col">
+          <button class="btn btn-primary" [routerLink]="'/'">Volver</button>
+        </div>
+      </div>
+    </form>
+  </div>
