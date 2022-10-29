@@ -8,7 +8,7 @@ import { Experiencia } from '../Models/experiencia';
 })
 export class SExperienciaService {
 
-  private URL = 'https://localhost:4200/experiencia';
+  private URL = 'https://localhost:8080/experiencia';
 
   constructor(private http: HttpClient) {}
 

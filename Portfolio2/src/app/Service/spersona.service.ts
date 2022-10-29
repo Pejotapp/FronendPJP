@@ -7,7 +7,7 @@ import { Persona } from '../Models/persona';
   providedIn: 'root'
 })
 export class SPersonaService {
-  private URL = 'https://localhost:4200/persona';
+  private URL = 'https://localhost:8080/persona';
 
   constructor(private http: HttpClient) {}
 

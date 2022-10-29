@@ -8,7 +8,7 @@ import { Trabajo } from '../Models/trabajo';
 })
 export class STrabajoService {
 
-  private URL = 'https://localhost:4200/trabajo';
+  private URL = 'https://localhost:8080/trabajo';
 
   constructor(private http: HttpClient) {}
 
