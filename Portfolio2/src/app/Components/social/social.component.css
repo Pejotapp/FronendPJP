@@ -1,0 +1,44 @@
+@media screen and (max-width: 400px) {
+    img {
+        width: 50%;
+        height: 60px;
+    }
+    ul{ 
+        width: 100%;
+        justify-content: center;
+    }
+    li{
+        margin:0;
+        padding: 0;
+        width: 100%;
+    }
+
+}
+i {
+    font-size: 1.5rem;
+    color: aliceblue;
+
+}
+
+.nav-item,
+button {
+    border-color: azure;
+    border-width: .1rem;
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    width: 320px;
+    height: 200px;
+}
+
+ul {
+    width: 100%;
+    justify-content: end;
+    margin-right: .5rem;
+}
+li{
+    width: auto;
+    margin: .6rem;
+    padding: .6rem;}
