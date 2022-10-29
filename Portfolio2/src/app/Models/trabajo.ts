@@ -1,19 +1,19 @@
 export class Trabajo {
-    id: number;
-    nombreProyecto: string;
-    descripcionProyecto: string;
-    imgproyecto: string;
-    linkproyecto: string;
+    id!: number;
+    nombreTrabajo: string;
+    descripcionTrabajo: string;
+    imgtrabajo: string;
+    linktrabajo: string;
   
     constructor(
-      nombreProyecto: string,
-      descripcionProyecto: string,
-      imgproyecto: string,
-      linkproyecto: string
+      nombreTrabajo: string,
+      descripcionTrabajo: string,
+      imgtrabajo: string,
+      linktrabajo: string
     ) {
-      this.nombreProyecto = nombreProyecto;
-      this.descripcionProyecto = descripcionProyecto;
-      this.imgproyecto = imgproyecto;
-      this.linkproyecto = linkproyecto;
+      this.nombreTrabajo = nombreTrabajo;
+      this.descripcionTrabajo = descripcionTrabajo;
+      this.imgtrabajo = imgtrabajo;
+      this.linktrabajo = linktrabajo;
     }
   }

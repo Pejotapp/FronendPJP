@@ -20,13 +20,13 @@ export class AcercaDeComponent implements OnInit {
   ) {}
   isLogged = false;
 
-  ngOnInit(): void {
+ngOnInit(): void { /* 
       this.personaService.getPersona().subscribe(data => {this.persona = data})
     
     if (this.tokenService.getToken()) {
       this.isLogged = true;
     } else {
       this.isLogged = false;
-    }
+    }*/
   }
 }

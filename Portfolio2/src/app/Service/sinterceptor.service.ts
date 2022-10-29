@@ -9,7 +9,7 @@ import { STokenService } from './stoken.service';
 export class SInterceptorService {
   constructor(private tokenService: STokenService) {}
 
-  intercept(
+  /*intercept(
     req: HttpRequest<any>,
     next: HttpHandler
   ): Observable<HttpEvent<any>> {
@@ -21,7 +21,7 @@ export class SInterceptorService {
       });
     }
     return next.handle(intReq);
-  }
+  }*/
 }
 
 export const interceptorProvider = [
@@ -30,4 +30,5 @@ export const interceptorProvider = [
     useClass: SInterceptorService,
     multi: true,
   },
+  
 ];

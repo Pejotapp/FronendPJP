@@ -19,13 +19,13 @@ export class TrabajosComponent implements OnInit {
   ) {}
   isLogged = false;
 
-  ngOnInit(): void {
+  ngOnInit(): void {/* 
     this.cargarTrabajos();
     if (this.tokenService.getToken()) {
       this.isLogged = true;
     } else {
       this.isLogged = false;
-    }
+    }*/
   }
   cargarTrabajos() {
     this.traService.lista().subscribe((data) => {

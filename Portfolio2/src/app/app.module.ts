@@ -18,14 +18,16 @@ import { interceptorProvider } from './Service/sinterceptor.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditAcercaDeComponent } from './Components/acerca-de/edit-acerca-de.component';
-import { EditTrabajosComponent } from './Components/Trabajos/edit-trabajos.component';
-import { NewTrabajosComponent } from './Components/Trabajos/new-trabajos.component';
-import { EditSkillComponent } from './Components/Skill/edit-skill.component';
-import { NewSkillComponent } from './Components/Skill/new-skill.component';
-import { EditExperienciaComponent } from './Components/Experiencia/edit-experiencia.component';
-import { NewExperienciaComponent } from './Components/Experiencia/new-experiencia.component';
-import { NewEducacionComponent } from './Components/Educacion/new-educacion.component';
-import { EditEducacionComponent } from './Components/Educacion/edit-educacion.component';
+import { EditEducacionComponent } from './Components/educacion/edit-educacion.component';
+import { NewEducacionComponent } from './Components/educacion/new-educacion.component';
+import { EditExperienciaComponent } from './Components/experiencia/edit-experiencia.component';
+import { NewExperienciaComponent } from './Components/experiencia/new-experiencia.component';
+import { EditSkillComponent } from './Components/skills/edit-skill.component';
+import { NewSkillComponent } from './Components/skills/new-skill.component';
+import { EditTrabajosComponent } from './Components/trabajos/edit-trabajos.component';
+import { NewTrabajosComponent } from './Components/trabajos/new-trabajos.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+
 
 @NgModule({
   declarations: [
@@ -56,9 +58,10 @@ import { EditEducacionComponent } from './Components/Educacion/edit-educacion.co
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-
-   
     HttpClientModule,
+    NgCircleProgressModule.forRoot({})
+   
+   
   ],
   providers: [interceptorProvider],
   bootstrap: [AppComponent],
