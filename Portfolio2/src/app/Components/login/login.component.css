@@ -1,0 +1,19 @@
+@media screen and (max-width:400px) {
+    .card{
+        width: 100%;
+        top: 0;
+        position: absolute;
+    }
+}
+
+.card-header, .card-footer {
+    background-color: #dddcdd;
+    font-weight: bold;
+}
+
+.card {
+    position: relative;
+    top: 20vh;
+    width: 90%;
+    justify-content: start;
+}
