@@ -13,21 +13,21 @@ export class SocialComponent implements OnInit {
 
   constructor(private router: Router, private tokenService: STokenService) { }
 
-  ngOnInit(): void {/*
+  ngOnInit(): void {
     if(this.tokenService.getToken()){
       this.isLogged = true;
     }else{
       this.isLogged = false;
-    }*/
+    }
   }
 
-  login(){/*
-    this.router.navigate(['/login'])*/
+  login(){
+    this.router.navigate(['/login'])
   }
 
-  onLogOut():void{/*
+  onLogOut():void{
     this.tokenService.logOut();
-    window.location.reload();*/
+    window.location.reload();
   }
 
 }

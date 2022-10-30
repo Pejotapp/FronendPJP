@@ -25,15 +25,15 @@ export class LoginComponent implements OnInit {
     private router: Router
   ) {}
 
-  ngOnInit(): void {/*
+  ngOnInit(): void {
     if (this.tokenService.getToken()) {
       this.isLogged = true;
       this.isLogginFail = false;
       this.roles = this.tokenService.getAuthorities();
-    }*/
+    }
   }
 
-  onLogin(): void {/*
+  onLogin(): void {
     this.loginUsuario = new LoginUsuario(this.nombreUsuario, this.password);
     this.authService.login(this.loginUsuario).subscribe(
       (data) => {
@@ -52,6 +52,6 @@ export class LoginComponent implements OnInit {
         alert("Credenciales incorrectas");
         console.log(this.errMsj);
       }
-    );*/
+    );
   }
 }

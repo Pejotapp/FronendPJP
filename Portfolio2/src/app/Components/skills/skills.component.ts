@@ -22,14 +22,14 @@ export class SkillsComponent implements OnInit {
 
   isLogged = false;
 
-  ngOnInit(): void {/*
+  ngOnInit(): void {
     this.cargarSkills();
 
     if (this.tokenService.getToken()) {
       this.isLogged = true;
     } else {
       this.isLogged = false;
-    }*/
+    }
   }
 
   cargarSkills(): void {

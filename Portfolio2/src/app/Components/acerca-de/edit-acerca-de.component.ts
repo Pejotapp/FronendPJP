@@ -21,7 +21,7 @@ export class EditAcercaDeComponent implements OnInit {
 
   isLogged = false;
 
-  ngOnInit(): void {/*
+  ngOnInit(): void {
     this.personaService.getPersona().subscribe((data) => {
       this.persona = data;
     });
@@ -30,7 +30,7 @@ export class EditAcercaDeComponent implements OnInit {
       this.isLogged = true;
     } else {
       this.isLogged = false;
-    }*/
+    }
   }
 
   onUpdate(): void {

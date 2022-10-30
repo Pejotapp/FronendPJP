@@ -1,5 +1,9 @@
 import { Injectable } from '@angular/core';
 
+const TOKEN_KEY = 'AuthToken';
+const USERNAME_KEY = 'AuthUsername';
+const AUTHORITIES_KEY = 'AuthAuthorities';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -8,7 +12,7 @@ export class STokenService {
   roles: Array<string> = [];
   constructor() { }
 
- /* public setToken(token: string): void {
+  public setToken(token: string): void {
     window.sessionStorage.removeItem(TOKEN_KEY);
     window.sessionStorage.setItem(TOKEN_KEY, token);
   }
@@ -46,4 +50,4 @@ export class STokenService {
   public logOut(): void {
     window.sessionStorage.clear();
   }
-}*/}
+}
