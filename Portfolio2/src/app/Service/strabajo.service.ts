@@ -8,7 +8,7 @@ import { Trabajo } from '../Models/trabajo';
 })
 export class STrabajoService {
 
-  private URL = 'https://localhost:8080/trabajo';
+  private URL = 'https://backpjp.herokuapp.com/trabajo';
 
   constructor(private http: HttpClient) {}
 

@@ -24,12 +24,12 @@
         <p id="about" class="text-start">{{ persona.about }}</p>
         <button
           type="button"
-          class="btn btn-outline-secondary bi bi-pencil-square"
+          class="btn btn-warning"
           *ngIf="isLogged"
           routerLink="/editAbout/{{ persona.id }}"
           title="Editar"
         >
-          Editar
+        <i class="bi bi-pencil-square"></i> Editar
         </button>
       </div>
     </div>

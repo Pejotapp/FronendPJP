@@ -15,7 +15,7 @@ export class AcercaDeComponent implements OnInit {
   persona: Persona = new Persona("","","","","");
 
   constructor(
-    private personaService: SPersonaService,
+    public personaService: SPersonaService,
     private tokenService: STokenService
   ) {}
   isLogged = false;
